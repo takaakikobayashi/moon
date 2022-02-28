@@ -1,0 +1,334 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <filter>
+  <filter-name>Encoding</filter-name>
+  <filter-class>members.controller.Filter</filter-class>
+</filter>
+<filter-mapping>
+  <filter-name>Encoding</filter-name>
+  <url-pattern>/members/searchservlet</url-pattern>
+</filter-mapping>
+  <servlet>
+        <servlet-name>loginservlet</servlet-name>
+        <servlet-class>members.controller.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>loginservlet</servlet-name>
+        <url-pattern>/members/loginservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>logoutservlet</servlet-name>
+        <servlet-class>common.controller.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>logoutservlet</servlet-name>
+        <url-pattern>/members/logoutservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>itemdetailservlet</servlet-name>
+        <servlet-class>common.controller.ItemDetailServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>itemdetailservlet</servlet-name>
+        <url-pattern>/members/itemdetailservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>itemlistservlet</servlet-name>
+        <servlet-class>common.controller.ItemListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>itemlistservlet</servlet-name>
+        <url-pattern>/members/itemlistservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>adminsitemdetailservlet</servlet-name>
+        <servlet-class>common.controller.ItemDetailServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>adminsitemdetailservlet</servlet-name>
+        <url-pattern>/admins/adminsitemdetailservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>adminsitemlistservlet</servlet-name>
+        <servlet-class>common.controller.ItemListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>adminsitemlistservlet</servlet-name>
+        <url-pattern>/admins/adminsitemlistservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>cartaddservlet</servlet-name>
+        <servlet-class>members.controller.CartAddServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cartaddservlet</servlet-name>
+        <url-pattern>/members/cartaddservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>cartemptyservlet</servlet-name>
+        <servlet-class>members.controller.CartEmptyServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cartemptyservlet</servlet-name>
+        <url-pattern>/members/cartemptyservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>orderconfirmationservlet</servlet-name>
+        <servlet-class>members.controller.OrderConfirmationServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>orderconfirmationservlet</servlet-name>
+        <url-pattern>/members/orderconfirmationservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>orderfinalizeservlet</servlet-name>
+        <servlet-class>members.controller.OrderFinalizeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>orderfinalizeservlet</servlet-name>
+        <url-pattern>/members/orderfinalizeservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>memberregister</servlet-name>
+        <servlet-class>members.controller.MemberRegister</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>memberregister</servlet-name>
+        <url-pattern>/members/memberregister</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>itemregisterservlet</servlet-name>
+        <servlet-class>admins.controller.ItemRegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>itemregisterservlet</servlet-name>
+        <url-pattern>/admins/itemregisterservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>membersgetimageservlet</servlet-name>
+        <servlet-class>common.controller.GetImageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>membersgetimageservlet</servlet-name>
+        <url-pattern>/members/membersgetimageservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>adminsgetimageservlet</servlet-name>
+        <servlet-class>common.controller.GetImageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>adminsgetimageservlet</servlet-name>
+        <url-pattern>/admins/adminsgetimageservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>adminsloginservlet</servlet-name>
+        <servlet-class>admins.controller.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>adminsloginservlet</servlet-name>
+        <url-pattern>/admins/adminsloginservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>adminslogoutservlet</servlet-name>
+        <servlet-class>common.controller.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>adminslogoutservlet</servlet-name>
+        <url-pattern>/admins/adminslogoutservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>itemeditservlet</servlet-name>
+        <servlet-class>admins.controller.ItemEditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>itemeditservlet</servlet-name>
+        <url-pattern>/admins/itemeditservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>loginuserinfoeditservlet</servlet-name>
+        <servlet-class>members.controller.LoginUserInfoEditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>loginuserinfoeditservlet</servlet-name>
+        <url-pattern>/members/loginuserinfoeditservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>cancelmembershipservlet</servlet-name>
+        <servlet-class>members.controller.CancelMembershipServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cancelmembershipservlet</servlet-name>
+        <url-pattern>/members/cancelmembershipservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>orderdetailservlet</servlet-name>
+        <servlet-class>common.controller.OrderDetailServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>orderdetailservlet</servlet-name>
+        <url-pattern>/members/orderdetailservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>cartdeleteservlet</servlet-name>
+        <servlet-class>members.controller.CartDeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cartdeleteservlet</servlet-name>
+        <url-pattern>/members/cartdeleteservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>amounteditservlet</servlet-name>
+        <servlet-class>members.controller.AmountEditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>amounteditservlet</servlet-name>
+        <url-pattern>/members/amounteditservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>reviewservlet</servlet-name>
+        <servlet-class>members.controller.ReviewServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>reviewservlet</servlet-name>
+        <url-pattern>/members/reviewservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>revieweditservlet</servlet-name>
+        <servlet-class>members.controller.ReviewEditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>revieweditservlet</servlet-name>
+        <url-pattern>/members/revieweditservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>favoriteservlet</servlet-name>
+        <servlet-class>members.controller.FavoriteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>favoriteservlet</servlet-name>
+        <url-pattern>/members/favoriteservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>unfavoriteservlet</servlet-name>
+        <servlet-class>members.controller.UnFavoriteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>unfavoriteservlet</servlet-name>
+        <url-pattern>/members/unfavoriteservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>managementservlet</servlet-name>
+        <servlet-class>admins.controller.ManagementServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>managementservlet</servlet-name>
+        <url-pattern>/admins/managementservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>searchservlet</servlet-name>
+        <servlet-class>members.controller.SearchServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>searchservlet</servlet-name>
+        <url-pattern>/members/searchservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>myfavoriteservlet</servlet-name>
+        <servlet-class>members.controller.MyFavoriteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>myfavoriteservlet</servlet-name>
+        <url-pattern>/members/myfavoriteservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>categorylistservlet</servlet-name>
+        <servlet-class>admins.controller.CategoryListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>categorylistservlet</servlet-name>
+        <url-pattern>/admins/categorylistservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>categoryeditservlet</servlet-name>
+        <servlet-class>admins.controller.CategoryEditServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>categoryeditservlet</servlet-name>
+        <url-pattern>/admins/categoryeditservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>categorystatusservlet</servlet-name>
+        <servlet-class>admins.controller.CategoryStatusServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>categorystatusservlet</servlet-name>
+        <url-pattern>/admins/categorystatusservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>updateorderstatusservlet</servlet-name>
+        <servlet-class>admins.controller.UpdateOrderStatusServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>updateorderstatusservlet</servlet-name>
+        <url-pattern>/admins/updateorderstatusservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>addcategoryservlet</servlet-name>
+        <servlet-class>admins.controller.CategoryAddServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addcategoryservlet</servlet-name>
+        <url-pattern>/admins/addcategoryservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>memberdetailservlet</servlet-name>
+        <servlet-class>admins.controller.MemberDetailServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>memberdetailservlet</servlet-name>
+        <url-pattern>/admins/memberdetailservlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>adminsorderdetailservlet</servlet-name>
+        <servlet-class>common.controller.OrderDetailServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>adminsorderdetailservlet</servlet-name>
+        <url-pattern>/admins/adminsorderdetailservlet</url-pattern>
+    </servlet-mapping>
+</web-app>

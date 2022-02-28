@@ -1,0 +1,9 @@
+.cartItem{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.itemImage{
+    padding-top: 10px;
+    padding-left: 10px;
+}

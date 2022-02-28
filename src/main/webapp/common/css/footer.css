@@ -1,0 +1,11 @@
+footer {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+}
+
+.menu-item {
+  list-style: none;
+  padding: 10px;
+}

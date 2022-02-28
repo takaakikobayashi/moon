@@ -1,0 +1,18 @@
+.itemlist {  
+  list-style-type: none;  
+  width: 570px;  
+  margin: 1em 0;  
+}  
+  
+.itemlist li {  
+  float: left;  
+  /* width: 185px; 幅調節  */
+  width: 25%; 
+  margin-bottom: 4em;  
+}  
+  
+.itemlist dl { height: 300px; } /* 高さ調節 */  
+  
+.itemlist dt { margin-bottom: 1em; }  
+  
+.itemlist dd { margin-bottom: 0.5em; } 
